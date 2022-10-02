@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {func} from "prop-types";
 
 const Home: NextPage = () => {
   return (
@@ -68,5 +69,50 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+// function Blog({posts}) {
+//   return(
+//       <ul>
+//         {posts.map((post)=>(
+//             <li>{post.title}</li>
+//         ))}
+//       </ul>
+//   )
+// }
+//
+// export async function getStaticProps(context){
+//   const res = await fetch('https://.../posts')
+//   const posts = await res.json()
+//
+//   return{
+//     props:{
+//       posts,
+//     },
+//   }
+// }
+
+// function Post({post}) {
+//   // Render post
+// }
+//
+// export async function getStaticPaths() {
+//   const res = await fetch('https://.../posts')
+//   const posts = await res.json()
+//
+//   const paths = posts.map((post)=>({
+//     params:{id:post.id},
+//   }))
+//
+//   return {paths, fallback:false}
+// }
+//
+// export async function getStaticProps({params}) {
+//   const res = await fetch(`https://.../posts/${params.id}`)
+//   const post = await res.json()
+//
+//   return {props:{post}}
+// }
+//
+// export default Post
 
 export default Home
