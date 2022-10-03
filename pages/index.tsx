@@ -115,4 +115,15 @@ const Home: NextPage = () => {
 //
 // export default Post
 
+// function Page({data}) {
+//   // Render data
+// }
+//
+// export async function getServerSideProps(){
+//   const res = await fetch('https://.../data')
+//   const data = await res.json()
+//
+//   return {props:{data}}
+// }
+
 export default Home
