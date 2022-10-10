@@ -14,7 +14,7 @@ const Home = ({
   }[]
 }) => {
   return (
-    <div>
+    <div className={homeStyles.container}>
       <Head>
         <title>Nullanswer</title>
         <link rel="icon" href="/favicon.ico" />
